@@ -30,7 +30,7 @@ const useAllowance = (lpContract: Contract) => {
     }
     let refreshInterval = setInterval(fetchAllowance, 10000)
     return () => clearInterval(refreshInterval)
-  }, [account, masterChefContract, lpContract])
+  }, [account, masterChefContract, lpContract]) // eslint-disable-line
 
   return allowance
 }

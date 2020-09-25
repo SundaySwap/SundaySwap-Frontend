@@ -11,10 +11,10 @@ const useStakedBalance = (pid: number) => {
   const [balance, setBalance] = useState(new BigNumber(0))
   const { account }: { account: string } = useWallet()
   const sushi = useSushi()
-  const masterChefContract = getMasterChefContract(sushi)
   const block = useBlock()
 
   const fetchBalance = useCallback(async () => {
+    const masterChefContract = getMasterChefContract(sushi)
     const balance = await getStaked(masterChefContract, pid, account)
     setBalance(new BigNumber(balance))
   }, [account, pid, sushi])
@@ -23,7 +23,7 @@ const useStakedBalance = (pid: number) => {
     if (account && sushi) {
       fetchBalance()
     }
-  }, [account, pid, setBalance, block, sushi])
+  }, [account, pid, setBalance, block, sushi]) // eslint-disable-line
 
   return balance
 }

@@ -4,29 +4,57 @@ import styled from 'styled-components'
 
 const Nav: React.FC = () => {
   return (
-    <StyledNav>
-      <StyledLink exact activeClassName="active" to="/">
-        HOME
-      </StyledLink>
-      <StyledLink exact activeClassName="active" to="/farms">
-        MENU
-      </StyledLink>
-      <StyledLink exact activeClassName="active" to="/staking">
-        STAKING
-      </StyledLink>
-      <StyledAbsoluteLink
-        href="https://medium.com/sushiswap/the-sushiswap-project-c4049ea9941e"
-        target="_blank"
-      >
-        ABOUT
-      </StyledAbsoluteLink>
-    </StyledNav>
+    <>
+      <StyledMobileNav>
+        <StyledLink exact activeClassName="active" to="/">
+          HOME
+        </StyledLink>
+        <StyledLink exact activeClassName="active" to="/farms">
+          MENU
+        </StyledLink>
+        <StyledLink exact activeClassName="active" to="/staking">
+          STAKING
+        </StyledLink>
+        <StyledAbsoluteLink
+          href=""
+          target="_blank"
+        >
+          ABOUT
+        </StyledAbsoluteLink>
+      </StyledMobileNav>
+      <StyledNav>
+        <StyledLink exact activeClassName="active" to="/">
+          HOME
+        </StyledLink>
+        <StyledLink exact activeClassName="active" to="/farms">
+          MENU
+        </StyledLink>
+        <StyledLink exact activeClassName="active" to="/staking">
+          STAKING
+        </StyledLink>
+        <StyledAbsoluteLink
+          href=""
+          target="_blank"
+        >
+          ABOUT
+        </StyledAbsoluteLink>
+      </StyledNav>
+    </>
   )
 }
 
 const StyledNav = styled.nav`
   align-items: center;
   display: flex;
+  @media (max-width: 700px) {
+    display: none;
+  }
+`
+const StyledMobileNav = styled.nav`
+  display: none;
+  @media (max-width: 700px) {
+    display: block; 
+  }
 `
 
 const StyledLink = styled(NavLink)`

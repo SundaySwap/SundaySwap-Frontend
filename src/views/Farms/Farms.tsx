@@ -26,7 +26,7 @@ const Farms: React.FC = () => {
           <>
             <Route exact path={path}>
               <PageHeader
-                icon={<img src={chef} height="120" />}
+                icon={<img src={chef} height="120" alt="main icon"/>}
                 subtitle="Earn SUNDAY tokens by staking SundaySwap V2 LP Tokens"
                 title="Select Your Hour"
               />

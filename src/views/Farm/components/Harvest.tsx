@@ -9,6 +9,7 @@ import Value from '../../../components/Value'
 import useEarnings from '../../../hooks/useEarnings'
 import useReward from '../../../hooks/useReward'
 import { getBalanceNumber } from '../../../utils/formatBalance'
+import SUN_ICON from '../../../assets/img/sun_logo.png'
 
 interface HarvestProps {
   pid: number
@@ -24,7 +25,9 @@ const Harvest: React.FC<HarvestProps> = ({ pid }) => {
       <CardContent>
         <StyledCardContentInner>
           <StyledCardHeader>
-            <CardIcon>🍣</CardIcon>
+            <CardIcon>
+              <img src={`${SUN_ICON}`} style={{ width: 32 }} alt="sun" />
+            </CardIcon>
             <Value value={getBalanceNumber(earnings)} />
             <Label text="SUNDAY Earned" />
           </StyledCardHeader>
@@ -56,12 +59,6 @@ const StyledCardActions = styled.div`
   margin-top: ${(props) => props.theme.spacing[6]}px;
   width: 100%;
 `
-
-const StyledSpacer = styled.div`
-  height: ${(props) => props.theme.spacing[4]}px;
-  width: ${(props) => props.theme.spacing[4]}px;
-`
-
 const StyledCardContentInner = styled.div`
   align-items: center;
   display: flex;

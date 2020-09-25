@@ -1,5 +1,5 @@
 import Web3 from 'web3'
-import { provider } from 'web3-core'
+import { provider } from 'web3-core' // eslint-disable-line
 import { Contract } from 'web3-eth-contract'
 import { AbiItem } from 'web3-utils'
 import ERC20ABI from '../constants/abi/ERC20.json'

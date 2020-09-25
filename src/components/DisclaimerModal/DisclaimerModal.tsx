@@ -28,7 +28,7 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
         <div>
           <p>Audits: None.</p>
           <p>
-            While the initial creators of the Sushi protocol have made
+            While the initial creators of the SUNDAY protocol have made
             reasonable efforts to attempt to ensure the security of the
             contracts, including forking much of the codebase from existing
             well-audited projects and soliciting review from friends, nothing
@@ -73,7 +73,7 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
   return (
     <Modal>
       <ModalTitle text={`Warning`} />
-      <CardIcon>⚠️</CardIcon>
+      <CardIcon><span role="img" aria-label="warning">⚠️</span></CardIcon>
       <ModalContent>{modalContent}</ModalContent>
       <ModalActions>{button}</ModalActions>
     </Modal>

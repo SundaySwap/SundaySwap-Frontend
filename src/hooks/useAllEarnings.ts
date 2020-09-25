@@ -23,13 +23,13 @@ const useAllEarnings = () => {
       ),
     )
     setBalance(balances)
-  }, [account, masterChefContract, sushi])
+  }, [account, masterChefContract, sushi]) // eslint-disable-line
 
   useEffect(() => {
     if (account && masterChefContract && sushi) {
       fetchAllBalances()
     }
-  }, [account, block, masterChefContract, setBalance, sushi])
+  }, [account, block, masterChefContract, setBalance, sushi]) // eslint-disable-line
 
   return balances
 }

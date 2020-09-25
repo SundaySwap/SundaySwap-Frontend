@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import SUN_ICON from '../../assets/img/sun_logo.png'
 
 import CardIcon from '../CardIcon'
 
@@ -11,7 +12,9 @@ const Loader: React.FC<LoaderProps> = ({ text }) => {
   return (
     <StyledLoader>
       <CardIcon>
-        <StyledSushi>🍣</StyledSushi>
+        <StyledSushi>
+          <img src={`${SUN_ICON}`} style={{ width: 32 }} alt="sun"/>
+        </StyledSushi>
       </CardIcon>
       {!!text && <StyledText>{text}</StyledText>}
     </StyledLoader>

@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={MAIN_ICON} height={160} />}
+        icon={<img src={MAIN_ICON} height={160} alt="main icon" />}
         title="SUNDAY is Ready"
         subtitle="Earn SUNDAY tokens by staking SundaySwap V2 LP Tokens"
       />
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        <span>💯</span>
+        <span role="img" aria-label="hundred">💯</span>
         <b>Pro Tip:</b> SUNDAY-ETH Token pool yields TWICE more token rewards per block.
       </StyledInfo>
       <Spacer size="lg" />

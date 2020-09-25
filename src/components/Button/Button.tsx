@@ -55,10 +55,11 @@ const Button: React.FC<ButtonProps> = ({
       fontSize = 12
       break
     case 'md':
-      boxShadow = '4px 4px 6px 0 rgba\(22, 52, 70, 0.26\)'
+      boxShadow = '4px 4px 6px 0 rgba(22, 52, 70, 0.26)'
       buttonPadding = 12
       buttonSize = 44
       fontSize = 12
+      break
     case 'lg':
       boxShadow = `6px 6px 12px ${color.grey[300]}`
       buttonPadding = spacing[4]

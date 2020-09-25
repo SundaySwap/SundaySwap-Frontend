@@ -83,7 +83,7 @@ const Disclaimer: React.FC = () => {
     if (!seenDisclaimer) {
       onPresentDisclaimerModal()
     }
-  }, [])
+  }, []) // eslint-disable-line
 
   return <div />
 }

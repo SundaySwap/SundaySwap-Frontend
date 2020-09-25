@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../../assets/img/logo.png'
+import LOGO from '../../assets/img/logo.png'
+import SUN_LOGO from '../../assets/img/sun_logo.png'
 
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <img src={logo} height="32" style={{ marginTop: -4 }} />
+      <img src={SUN_LOGO} height="32" style={{  marginRight: 10,  marginTop: -4 }} alt="sun logo" />
+      <img src={LOGO} height="32" style={{ marginTop: -4 }} alt="logo" />
     </StyledLogo>
   )
 }
@@ -20,6 +22,12 @@ const StyledLogo = styled(Link)`
   min-width: 44px;
   padding: 0;
   text-decoration: none;
+
+  & > img:nth-of-type(2) {
+    @media (max-width: 728px) {
+      display: none;
+    }
+  }
 `
 
 export default Logo

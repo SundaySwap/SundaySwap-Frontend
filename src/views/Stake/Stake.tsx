@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react'
 import styled from 'styled-components'
 import chef from '../../assets/img/main_icon.png'
 
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 import { provider } from 'web3-core'
 
@@ -14,11 +14,11 @@ import Spacer from '../../components/Spacer'
 
 import useModal from '../../hooks/useModal'
 
-import useSushi from '../../hooks/useSushi'
-import useFarm from '../../hooks/useFarm'
-import useRedeem from '../../hooks/useRedeem'
+// import useSushi from '../../hooks/useSushi'
+// import useFarm from '../../hooks/useFarm'
+// import useRedeem from '../../hooks/useRedeem'
 import { getContract } from '../../utils/erc20'
-import { getMasterChefContract } from '../../sushi/utils'
+// import { getMasterChefContract } from '../../sushi/utils'
 
 import Harvest from './components/Harvest'
 import Stake from './components/Stake'
@@ -31,7 +31,7 @@ const Farm: React.FC = () => {
     window.scrollTo(0, 0)
   }, [])
 
-  const sushi = useSushi()
+  // const sushi = useSushi()
   const { ethereum } = useWallet()
 
   const lpTokenAddress = '';
@@ -55,7 +55,7 @@ const Farm: React.FC = () => {
       {!!account ? (
         <>
           <PageHeader
-            icon={<img src={chef} height="120" />}
+            icon={<img src={chef} height="120" alt="main icon"/>}
             title="SUNDAY is Ready"
             subtitle="Welcome to the Sunday Exchange, Stake SUNDAY to Earn Sunday."
           />
@@ -75,7 +75,7 @@ const Farm: React.FC = () => {
             </StyledCardsWrapper>
             <Spacer size="lg" />
             <StyledInfo>
-              ℹ️️  You will earn a portion of the swaps fees based on the amount
+              <span role="img" aria-label="info">ℹ️️</span>  You will earn a portion of the swaps fees based on the amount
               of xSunday held relative the weight of the staking. xSunday can be
               minted by staking Sunday. To redeem Sunday staked plus swap fees
               convert xSunday back to Sunday. There are currently 0.0000000
@@ -95,7 +95,7 @@ const Farm: React.FC = () => {
         >
           <Button
             onClick={onPresentWalletProviderModal}
-            text="🔓 Unlock Wallet"
+            text="Unlock Wallet"
           />
         </div>
       )}

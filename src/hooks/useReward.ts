@@ -8,11 +8,10 @@ import { harvest, getMasterChefContract } from '../sushi/utils'
 const useReward = (pid: number) => {
   const { account } = useWallet()
   const sushi = useSushi()
-  const masterChefContract = getMasterChefContract(sushi)
 
   const handleReward = useCallback(async () => {
+    const masterChefContract = getMasterChefContract(sushi)
     const txHash = await harvest(masterChefContract, pid, account)
-    console.log(txHash)
     return txHash
   }, [account, pid, sushi])
 
