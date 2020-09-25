@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.852a2a8b.chunk.js": "/frontend/static/js/0.852a2a8b.chunk.js",
     "main.css": "/frontend/static/css/main.8701cc6f.chunk.css",
-    "main.js": "/frontend/static/js/main.29e2566e.chunk.js",
+    "main.js": "/frontend/static/js/main.d8156dd2.chunk.js",
     "runtime-main.js": "/frontend/static/js/runtime-main.cd176d1f.js",
     "static/js/3.067de5d1.chunk.js": "/frontend/static/js/3.067de5d1.chunk.js",
     "static/js/4.0b7e11c8.chunk.js": "/frontend/static/js/4.0b7e11c8.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/10.845a66f2.chunk.js": "/frontend/static/js/10.845a66f2.chunk.js",
     "static/js/11.ae02fb53.chunk.js": "/frontend/static/js/11.ae02fb53.chunk.js",
     "index.html": "/frontend/index.html",
-    "precache-manifest.1f39fc6f2063348a591b3c174dfe71ec.js": "/frontend/precache-manifest.1f39fc6f2063348a591b3c174dfe71ec.js",
+    "precache-manifest.f3e7d73cc513b5075e91c5d34ecdb5d7.js": "/frontend/precache-manifest.f3e7d73cc513b5075e91c5d34ecdb5d7.js",
     "service-worker.js": "/frontend/service-worker.js",
     "static/js/3.067de5d1.chunk.js.LICENSE.txt": "/frontend/static/js/3.067de5d1.chunk.js.LICENSE.txt",
     "static/js/5.24efd89b.chunk.js.LICENSE.txt": "/frontend/static/js/5.24efd89b.chunk.js.LICENSE.txt",
@@ -47,6 +47,6 @@
     "static/js/runtime-main.cd176d1f.js",
     "static/js/3.067de5d1.chunk.js",
     "static/css/main.8701cc6f.chunk.css",
-    "static/js/main.29e2566e.chunk.js"
+    "static/js/main.d8156dd2.chunk.js"
   ]
 }
