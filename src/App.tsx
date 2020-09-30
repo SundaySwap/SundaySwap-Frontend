@@ -14,9 +14,6 @@ import theme from './theme'
 import Farms from './views/Farms'
 import Home from './views/Home'
 import Stake from './views/Stake'
-import awsConfig from './aws-exports.js'
-
-Amplify.configure(awsConfig)
 
 const App: React.FC = () => {
   const [mobileMenu, setMobileMenu] = useState(false)
